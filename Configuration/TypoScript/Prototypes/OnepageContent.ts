@@ -2,6 +2,8 @@
 * We're using a separate variable to render our onepage content into.
 * So you have the upper port with homeContent to render the rootpage content and then you have all the subpage contents.
 */
+<INCLUDE_TYPOSCRIPT: source="DIR: EXT:onepage_tutorial/Configuration/TypoScript/Extensions/GridElements/" extensions="ts">
+
 prototype.onepageContent = HMENU
 prototype.onepageContent {
     special = directory
