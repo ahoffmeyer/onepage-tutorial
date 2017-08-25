@@ -1,0 +1,21 @@
+{
+  "name": "ahoffmeyer/onepage-tutorial",
+  "description": "This is an TYPO3 CMS distribution creating a simple onapege layout with Gridelements for educational purposes.",
+  "type": "typo3-cms-extension",
+  "keywords": ["TYPO3 CMS", "OnePager", "Gridelements"],
+  "homepage": "https://forge.typo3.org/projects/extension-gridelements2",
+  "license": "GPL-2.0+",
+  "require": {
+    "typo3/cms-core": "~8.0",
+    "gridelementsteam/gridelements": "dev-master"
+  },
+  "replace": {
+    "onepage_tutorial": "self.version",
+    "typo3-ter/onepage_tutorial": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "GridElementsTeam\\Gridelements\\": "Classes/"
+    }
+  }
+}
