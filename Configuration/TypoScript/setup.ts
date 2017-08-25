@@ -8,6 +8,7 @@ page {
         absRefPrefix = /
     }
 
+    // For the OnePager top link to scroll right up to the top
     bodyTagAdd = id="onepage-top"
 
     includeCSS {
@@ -16,6 +17,8 @@ page {
     }
 
     cssInline {
+        // As the TopNav is fixed, this is recommended by bootstrap.
+        // Put it in your own CSS file if you like to.
         10 = TEXT
         10.value = body { padding-top: 70px; }
     }
@@ -27,11 +30,13 @@ page {
         layoutRootPath = {$plugin.tx_onepage_tutorial.settings.layoutRootPath}
 
         variables {
-
+            // Top navigation as variable in the template
             topOnePageNavi < prototype.topOnePageNavi
 
+            // All content from the upper root aka homepage
             homeContent < styles.content.get
 
+            // Fetch the content from defined pages as onepage content
             onepageContent < prototype.onepageContent
         }
     }

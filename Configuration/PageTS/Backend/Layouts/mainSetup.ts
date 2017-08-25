@@ -19,7 +19,7 @@ mod {
                         }
                     }
                 }
-                # icon = EXT:onepage_tutorial/Resources/Public/Icons/mainLayout.png
+                // icon = EXT:onepage_tutorial/Resources/Public/Icons/mainLayout.png
             }
         }
     }

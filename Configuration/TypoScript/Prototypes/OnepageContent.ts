@@ -12,15 +12,14 @@ prototype.onepageContent {
 
         NO = 1
         NO {
+            // We wrap all parts into a section tag with an ID to enable scrolling/jumping to this section.
             allStdWrap.dataWrap = <section id="onepage-{field:uid}">|</section>
             doNotLinkIt = 1
 
-            /**
-            * Get a nice header image for a section if there is one in field MEDIA
-            * To set this before makes it easier to create a full width image just with some CSS
-            *
-            * @NOTE: You can put this code into the content rendering section instead.
-            */
+            // Get a nice header image for a section if there is one in field MEDIA
+            // To set this before makes it easier to create a full width image just with some CSS
+            // ***
+            // @NOTE: You can put this code into the content rendering section instead.
             before.cObject = FILES
             before.cObject {
                 references {
@@ -43,11 +42,9 @@ prototype.onepageContent {
                 select {
                     pidInList.data = field:uid
 
-                    /**
-                    * Exclude Gridelements containers. Why? Simply if not, we would have the content rendered twice:
-                    * Once just the elements stored in the DB and then the Gridelement children.
-                    * This prevents rendering the elements as single element.
-                    */
+                    // Exclude Gridelements containers. Why? Simply if not, we would have the content rendered twice:
+                    // Once just the elements stored in the DB and then the Gridelement children.
+                    // This prevents rendering the elements as single element.
                     where = tx_gridelements_container = 0
                 }
                 renderObj < tt_content

@@ -6,8 +6,8 @@ tx_gridelements {
             title = 2 Columns Grid
             description = 2 Colums Grid
             frame = 1
-            # icon = EXT:onepage_tutorial/Resources/Public/Icons/Backend/Grids/2ColsGrid.png
-            # flexformDS = FILE:EXT:tutorial/Configuration/FlexForms/Extensions/GridElements/2ColsGrid.xml
+            // icon = EXT:onepage_tutorial/Resources/Public/Icons/Backend/Grids/2ColsGrid.png
+            // flexformDS = FILE:EXT:tutorial/Configuration/FlexForms/Extensions/GridElements/2ColsGrid.xml
             topLevelLayout = 0
             config {
                 colCount = 2
